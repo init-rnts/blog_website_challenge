@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="form-group mb-3">
+            <label class="form-label" for="dayNameInput">Title</label>
+            <input id="dayNameInput" class="form-control" type="text" name="dayName">
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label" for="dayPostInput">Post</label>
+            <textarea id="dayPostInput" class="form-control" rows="4" type="text" name="dayPost"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">Publish</button>
+    </form>
+<%- include("partials/footer") %>
